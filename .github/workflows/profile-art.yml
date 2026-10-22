@@ -37,11 +37,12 @@ jobs:
           sudo cp profile-3d-contrib/*.svg dist/
           sudo chown -R "$USER" dist
 
-      # Transparent background + current / longest streak and all-time total
-      - name: Patch 3D graphs
+      # Header, streak/stats card and footer from live data + transparent 3D graphs
+      - name: Generate profile visuals
         env:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-        run: python3 .github/scripts/patch_profile_svg.py "${{ github.repository_owner }}" dist/profile-*.svg
+          PROFILE_NAME: Alexis Tardif
+        run: python3 .github/scripts/generate_profile.py "${{ github.repository_owner }}" dist
 
       # Publish everything to the "output" branch
       - uses: crazy-max/ghaction-github-pages@v4

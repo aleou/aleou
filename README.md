@@ -1,10 +1,6 @@
-<!-- Header -->
+<!-- Header: generated every 12h by .github/scripts/generate_profile.py -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=0:0f2027,50:203a43,100:2c5364&text=aleou&fontColor=ffffff&fontSize=56&fontAlignY=38&desc=DevOps%20%E2%80%A2%20IAM%20%E2%80%A2%20Automation%20%E2%80%A2%20GenAI&descAlignY=60&descSize=16" alt="header" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3000&pause=800&color=2EC4B6&center=true&vCenter=true&width=620&lines=IT+Project+Manager+%E2%80%A2+DevOps+mindset;Self-hosting+%2F+Proxmox+%2F+Docker;Identity+%26+Access+%E2%80%A2+Entra+ID+%E2%80%A2+OIDC;GPU+serverless+%E2%80%A2+ComfyUI+%E2%80%A2+RunPod" alt="Typing SVG" />
+  <img src="https://raw.githubusercontent.com/aleou/aleou/output/header.svg" alt="Alexis Tardif — IT Project Manager, DevOps, IAM, GenAI" width="100%" />
 </p>
 
 <p align="center">
@@ -66,6 +62,14 @@ side:      Proxmox homelab (LXC / VM), serverless GPU, web & mobile apps
 
 <p align="center">
   <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aleou/aleou/output/stats-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aleou/aleou/output/stats-light.svg" />
+    <img alt="Streaks and contribution stats" src="https://raw.githubusercontent.com/aleou/aleou/output/stats-dark.svg" width="100%" />
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aleou/aleou/output/profile-night-green.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aleou/aleou/output/profile-green.svg" />
     <img alt="3D contribution graph" src="https://raw.githubusercontent.com/aleou/aleou/output/profile-night-green.svg" width="100%" />
@@ -80,4 +84,6 @@ side:      Proxmox homelab (LXC / VM), serverless GPU, web & mobile apps
   </picture>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0f2027,50:203a43,100:2c5364&section=footer" width="100%" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aleou/aleou/output/footer.svg" alt="footer" width="100%" />
+</p>
