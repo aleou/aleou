@@ -16,32 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Snake eating the contribution calendar
-      - uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-dark.svg?palette=github-dark&color_snake=#2EC4B6&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
-            dist/snake-light.svg?palette=github-light&color_snake=#2EC4B6
-
-      # 3D contribution calendar + stats (contributions, stars, languages)
-      - uses: yoshi389111/github-profile-3d-contrib@latest
+      # Every card of the README, built from live data
+      - name: Generate profile visuals
         env:
           # Use a PAT secret named MY_GITHUB_TOKEN to include private contributions,
           # falls back to the default token otherwise.
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-
-      - name: Collect 3D graphs
-        run: |
-          sudo cp profile-3d-contrib/*.svg dist/
-          sudo chown -R "$USER" dist
-
-      # Header, streak/stats card and footer from live data + transparent 3D graphs
-      - name: Generate profile visuals
-        env:
-          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          PROFILE_NAME: Alexis Tardif
         run: python3 .github/scripts/generate_profile.py "${{ github.repository_owner }}" dist
 
       # Publish everything to the "output" branch
