@@ -68,5 +68,10 @@ side:      homelab Proxmox (LXC / VM), GPU serverless, apps web & mobile
   <img src="https://streak-stats.demolab.com?user=aleou&theme=tokyonight&hide_border=true" />
 </p>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aleou/aleou/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aleou/aleou/output/snake-light.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/aleou/aleou/output/snake-dark.svg" width="100%" />
+</picture>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:0f2027,50:203a43,100:2c5364&section=footer" width="100%" />
