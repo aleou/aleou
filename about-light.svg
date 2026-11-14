@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="436" viewBox="0 0 1200 436" role="img" aria-label="About">
+<style>
+  text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #1f2328; }
+  .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+  .kicker { font-size: 12px; font-weight: 700; letter-spacing: 1.6px; fill: #59636e; }
+  .big { font-size: 46px; font-weight: 800; letter-spacing: -1px; }
+  .unit { font-size: 18px; font-weight: 600; fill: #59636e; }
+  .small { font-size: 13px; }
+  .dim { fill: #59636e; }
+  .strong { font-weight: 700; }
+  .tile { fill: #ffffff; stroke: #d0d7de; }
+  .grad { fill: url(#accent); }
+  /* Final state is the default; animations start from the hidden state so
+     renderers that do not play them still show everything */
+  .fade { animation: fade .8s ease-out backwards; }
+  .grow { transform-box: fill-box; transform-origin: left; animation: grow 1.2s cubic-bezier(.2,.8,.2,1) .4s backwards; }
+  @keyframes fade { from { opacity: 0; } }
+  @keyframes grow { from { transform: scaleX(0); } }
+
+  .cursor { fill: #0f9488; animation: blink 1.1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+</style>
+<rect x=".5" y=".5" width="1199" height="435" rx="20" fill="#ffffff" stroke="#d0d7de"/>
+<path d="M.5 52V20.5a20 20 0 0 1 20-20h1159a20 20 0 0 1 20 20V52Z" fill="#eef2f5"/>
+<line x1="0" y1="52" x2="1200" y2="52" stroke="#d0d7de"/>
+<circle cx="28" cy="26" r="6.5" fill="#ff5f57"/><circle cx="50" cy="26" r="6.5" fill="#febc2e"/><circle cx="72" cy="26" r="6.5" fill="#28c840"/>
+<text x="600.0" y="31" text-anchor="middle" class="mono small dim">~/aleou/about.yaml</text>
+<text x="1172" y="31" text-anchor="end" class="kicker">ABOUT</text>
+<text x="64" y="96" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">1</text><text x="88" y="96" class="mono fade" style="font-size:15px;animation-delay:0.00s"><tspan fill="#0f766e" font-weight="700">role</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="96" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.00s">IT Project Manager — higher education</text><text x="64" y="126" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">2</text><text x="88" y="126" class="mono fade" style="font-size:15px;animation-delay:0.08s"><tspan fill="#0f766e" font-weight="700">location</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="126" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.08s">France</text><text x="64" y="156" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">3</text><text x="88" y="156" class="mono fade" style="font-size:15px;animation-delay:0.16s"><tspan fill="#0f766e" font-weight="700">daily</tspan><tspan fill="#59636e">:</tspan></text><text x="64" y="186" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">4</text><text x="106" y="186" class="mono fade" style="font-size:15px;animation-delay:0.24s"><tspan fill="#c2410c">- </tspan><tspan fill="#0f766e" font-weight="700">devops</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="186" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.24s">CI/CD, Docker containerization, Traefik/Nginx reverse proxy, Linux VPS deployments</text><text x="64" y="216" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">5</text><text x="106" y="216" class="mono fade" style="font-size:15px;animation-delay:0.32s"><tspan fill="#c2410c">- </tspan><tspan fill="#0f766e" font-weight="700">iam</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="216" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.32s">Entra ID — MFA, conditional access, SSO / OIDC, account lifecycle management</text><text x="64" y="246" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">6</text><text x="106" y="246" class="mono fade" style="font-size:15px;animation-delay:0.40s"><tspan fill="#c2410c">- </tspan><tspan fill="#0f766e" font-weight="700">secops</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="246" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.40s">incident response, sign-in auditing, mail security hardening</text><text x="64" y="276" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">7</text><text x="106" y="276" class="mono fade" style="font-size:15px;animation-delay:0.48s"><tspan fill="#c2410c">- </tspan><tspan fill="#0f766e" font-weight="700">data</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="276" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.48s">ETL &amp; cross-system imports (SIS / ERP / LMS), reconciliation scripts</text><text x="64" y="306" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">8</text><text x="106" y="306" class="mono fade" style="font-size:15px;animation-delay:0.56s"><tspan fill="#c2410c">- </tspan><tspan fill="#0f766e" font-weight="700">integ</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="306" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.56s">REST APIs, webhooks, workflow orchestration (iPaaS / n8n)</text><text x="64" y="336" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">9</text><text x="106" y="336" class="mono fade" style="font-size:15px;animation-delay:0.64s"><tspan fill="#c2410c">- </tspan><tspan fill="#0f766e" font-weight="700">run</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="336" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.64s">web server operations (PHP / LAMP), monitoring, backups, internal MCP servers</text><text x="64" y="366" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">10</text><text x="88" y="366" class="mono fade" style="font-size:15px;animation-delay:0.72s"><tspan fill="#0f766e" font-weight="700">side</tspan><tspan fill="#59636e">:</tspan></text><text x="215" y="366" class="mono fade" style="font-size:15px;fill:#24292f;animation-delay:0.72s">Proxmox homelab (LXC / VM), serverless GPU, web &amp; mobile apps</text>
+<text x="64" y="396" class="mono" style="font-size:13px;fill:#b6c0ca" text-anchor="end">11</text>
+<rect x="88" y="381" width="9" height="19" class="cursor"/>
+</svg>
